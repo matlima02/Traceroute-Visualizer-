@@ -7,7 +7,7 @@ def traceroute(dest_addr, dest_port, max_hops):
 
     while ttl <= max_hops:
         udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)                       # send socket
-        icmp_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_ICMP)   # receive socket
+        icmp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_ICMP) # receive socket
         
         udp_socket.setsockopt(socket.IPPROTO_IP, socket.IP_TTL, ttl)    
         icmp_socket.settimeout(2)
