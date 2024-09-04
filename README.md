@@ -9,6 +9,11 @@ Simply clone the repository to your local machine:
 git clone https://github.com/matlima02/traceroute.git
 ```
 
+Then install these 3 packages:
+```bash
+pip install plotly geopy requests
+```
+
 ## Usage
 ```bash
 cd traceroute
