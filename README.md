@@ -1,4 +1,4 @@
-# traceroute
+# Traceroute Visualizer
 Just a simple Traceroute Visualizer in python.
 Easy to follow and understand :)
 
